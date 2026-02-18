@@ -508,13 +508,12 @@
   }, {threshold:0.12, rootMargin:'0px 0px -40px 0px'});
   revealEls.forEach(el => obs.observe(el));
 
-  document.getElementById('contactForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    const toast = document.getElementById('toast');
-    toast.classList.add('show');
-    this.reset();
-    setTimeout(() => toast.classList.remove('show'), 4000);
-  });
+document.getElementById('contactForm').addEventListener('submit', function() {
+  const toast = document.getElementById('toast');
+  toast.classList.add('show');
+  setTimeout(() => toast.classList.remove('show'), 4000);
+});
+
 
   const sections = document.querySelectorAll('section[id]');
   const navLinks = document.querySelectorAll('.nav-links a');
