@@ -418,20 +418,20 @@
           <p>We'll get back to you as soon as possible.</p>
           <form id="contactForm" action="https://formsubmit.co/arthurluswata47@gmal.com" method="POST">
             <div class="form-row">
-              <div class="form-group"><label>First Name</label><input type="text" placeholder="John" required /></div>
-              <div class="form-group"><label>Last Name</label><input type="text" placeholder="Doe" required /></div>
+              <div class="form-group"><label>First Name</label><input type="text"  name="name" placeholder="John" required /></div>
+              <div class="form-group"><label>Last Name</label><input type="text" name="name" placeholder="Doe" required /></div>
             </div>
-            <div class="form-group"><label>Email Address</label><input type="email" placeholder="you@example.com" required /></div>
+            <div class="form-group"><label>Email Address</label><input type="email" name="email" placeholder="you@example.com" required /></div>
             <div class="form-group"><label>I'm joining as</label>
-              <select>
-                <option>A student looking to contribute</option>
-                <option>Someone seeking support</option>
-                <option>A community partner</option>
-                <option>A donor or sponsor</option>
-                <option>Other</option>
+              <select name="role" id="role">
+                <option value="A student looking to contribute">A student looking to contribute</option>
+                <option value="Someone seeking support">Someone seeking support</option>
+                <option value="A community partner">A community partner</option>
+                <option value="A donor or sponsor">A donor or sponsor</option>
+                <option  value="Other">Other</option>
               </select>
             </div>
-            <div class="form-group"><label>Your Message</label><textarea placeholder="Tell us about yourself or how we can help you…"></textarea></div>
+            <div class="form-group"><label>Your Message</label><textarea name="message" placeholder="Tell us about yourself or how we can help you…"></textarea></div>
             <button type="submit" class="btn-submit">Send Message ✈️</button>
           </form>
         </div>
